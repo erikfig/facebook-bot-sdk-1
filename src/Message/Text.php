@@ -7,7 +7,7 @@ class Text implements Message
 
     private $recipientId;
 
-    public function  __construct( $recipientId)
+    public function __construct($recipientId)
     {
         $this->recipientId = $recipientId;
     }
