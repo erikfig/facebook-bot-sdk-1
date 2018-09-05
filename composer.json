@@ -11,7 +11,8 @@
     "require": {
         "php": ">=7.1",
         "phpunit/phpunit": "^7.2",
-        "guzzlehttp/guzzle": "^6.3"
+        "guzzlehttp/guzzle": "^6.3",
+        "denisbao/facebook-bot-sdk": "dev-master"
     },
     "autoload": {
         "psr-4": {
