@@ -2,6 +2,11 @@
 
 namespace CodeBot;
 
+
+/*
+ * CLASSE RESPONSÁVEL PELO RECEBIMENTO DE DADOS VINDOS DO FACEBOOK
+ */
+
 class SenderRequest
 {
 
