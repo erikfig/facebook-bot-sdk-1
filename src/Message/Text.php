@@ -1,5 +1,9 @@
 <?php
 
+/*
+ * Classe responsável pelo envio de mensagens de texto
+ */
+
 namespace CodeBot\Message;
 
 class Text implements Message

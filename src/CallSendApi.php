@@ -7,17 +7,18 @@ use GuzzleHttp\Client;
 class CallSendApi
 {
 
+    //URL PARA ACESSO A API DE MENSAGENS DO FACEBOOK:
     const URL = 'https://graph.facebook.com/v2.6/me/messages';
     private $pageAccessToken;
+
 
     public function __construct($pageAccessToken)
     {
         $this->pageAccessToken = $pageAccessToken;
     }
 
-    public function make(array $message, strint $url = null, $method = 'POST') :string
+    public function make(array $message, $url = null, $method = 'POST') :string
     {
-
         $client = new Client();
         $url = $url ?? CallSendApi::URL;
 
@@ -27,7 +28,6 @@ class CallSendApi
         ]);
 
         return (string)$response->getBody();
-
     }
 
 }

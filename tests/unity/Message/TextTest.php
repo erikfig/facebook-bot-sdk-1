@@ -8,7 +8,7 @@ class TextTest extends TestCase
 {
     public function testRetornaUmArray()
     {
-        $actual = (new Text(1))->message("Olá");
+
         $expected = [
             'recipient' => [
                 'id'=>1

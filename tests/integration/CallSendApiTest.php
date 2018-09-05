@@ -6,7 +6,8 @@ use PHPUnit\Framework\TestCase;
 
 class CallSendApiTest extends TestCase
 {
-
+    //ANOTATION: PREVINIR QUE ERRO ACONTEÇA POR INCOERENCIA NO ACCESS TOKEN
+    //PASSADO NO METODO CallSendApi
     /**
      * @expectedException \GuzzleHttp\Exception\ClientException
      */
