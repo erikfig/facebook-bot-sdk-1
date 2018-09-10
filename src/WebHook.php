@@ -16,9 +16,16 @@ class WebHook
 
         $hubMode = filter_input(INPUT_GET, 'hub_mode');
         $hubVerifyToken = filter_input(INPUT_GET, 'hub_verify_token');
-        print_r("////entrando no check");
+        print_r("====>entrando no check\n");
+        print_r("=====Variáveis:\n");
+
+        var_dump($hubMode);
+        var_dump($hubVerifyToken);
+        var_dump($token);
+
+
         if ($hubMode === 'subscribe' and $hubVerifyToken === $token){
-            print_r("////entrando IF check");
+            print_r("////entrando IF");
             return filter_input(INPUT_GET, 'hub_challenge');
         }
         return false;
