@@ -23,6 +23,8 @@ class WebHook
         var_dump($hubVerifyToken);
         var_dump($token);
 
+        print_r($_GET);
+
 
         if ($hubMode === 'subscribe' and $hubVerifyToken === $token){
             print_r("////entrando IF");
