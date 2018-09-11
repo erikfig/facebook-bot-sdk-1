@@ -8,12 +8,6 @@
             "email": "denis.tpd@gmail.com"
         }
     ],
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/erikfig/facebook-bot-sdk-1"
-        }
-    ],
     "require": {
         "php": ">=7.1",
         "phpunit/phpunit": "^7.2",
